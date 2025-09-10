@@ -27,3 +27,74 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+.header{
+  font-size: 32px;
+  font-weight: 900;
+  padding: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+li{
+  list-style: none;
+  padding-bottom: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content{
+  display: flex;
+  flex: 1;
+  gap: 16px;
+}
+  .sidebar{
+    flex: 0 0 220px;
+    padding: 16px;
+  }
+
+  main{
+    flex: 1;
+
+  }
+
+  main {           /* take the rest of the row */
+  padding: 16px;
+  background: #f5f4f2;
+  display: flex;      /* so cards can use flex rules */
+  flex-wrap: wrap;    /* <-- THIS makes cards wrap to new lines like a grid */
+  gap: 16px;          /* space between cards */
+}
+
+.card{
+  flex: 1 1 400px;
+  border: 1px solid greenyellow;
+  align-self: center;
+  padding: 5px;
+  height: 180px;
+  background: #805a0f;
+  justify-self: center;
+}
+
+.footer{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
